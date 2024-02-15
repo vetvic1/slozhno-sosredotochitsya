@@ -6,7 +6,7 @@
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;
-    filter: sepia(0.6);
+  filter: sepia(0.6);
 }
 
 .page {
@@ -20,6 +20,7 @@
   display: grid;
   grid-template-columns: 100%;
   margin: 10px 10px 0 10px;
+  gap: 40px;
 }
 
 .header {
@@ -170,12 +171,13 @@
 }
 
 .content {
- 
+display: grid;
+gap: 40px;
 }
 
 .content_section_why {
- 
-  
+display: grid;
+margin-top: 1rem;
 }
 
 .heading {
@@ -186,15 +188,17 @@
 }
 
 .section-title {
-
+  margin: 21px 0 0;
 }
 
 .content_title {
   color: var(--accent-color);
+  margin: 4% 0 0;
 }
 
 .content_text_block {
 
+display: grid;
 }
 
 .content_text_block-item:not(:last-of-type) {
@@ -203,7 +207,9 @@
 
 .content_paragraph {
   color: var(--text-color);
-  font-weight: 400;  
+  font-weight: 400;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0;
 }
 
 .title-decor-color {
