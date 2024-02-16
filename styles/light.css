@@ -1,45 +1,40 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-:root.theme-light {
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
-  --shadow_color: #FF0070;
+:root .theme-light {
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --shadow_color: #ff0070;
   --title-text-color: #353430;
   --text-color: #353430;
   --menu-color: #353430;
-  --bg-color: #FFF1F7;  
+  --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
-} 
+}
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: #FF8DCB;
-    --title-color: #FFC2E6;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
     --title-text-color: #353430;
     --text-color: #353430;
     --menu-color: #353430;
-    --bg-color: #FFF1F7; 
+    --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
-        /* Дублируем переменные светлой темы */    
-    }
+  }
   .decorate {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .page.theme_light {
-  background: var(--bg-image) no-repeat center fixed;
-  background-size: cover;  
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --shadow_color: #ff0070;
+  --title-text-color: #353430;
+  --text-color: #353430;
+  --menu-color: #353430;
+  --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .theme_light .decorate {
   display: none;
 }
-
-.header__theme-menu-button_type_light {
-  
-}
-

@@ -90,9 +90,6 @@
   list-style-type: none;
 }
 
-.header__theme-menu-item {
-}
-
 .header__theme-menu-button {
   font-family: var(--accent-font, serif);
   color: var(--menu-color);
@@ -125,12 +122,6 @@
 .header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
   pointer-events: none;
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_dark {
 }
 
 .header_title,
@@ -342,24 +333,21 @@ a {
   }
   .header_title {
     text-shadow: 4px 4px 0 var(--shadow_color);
-
+  }
   .header__theme-menu {
     align-self: self-start;
     justify-self: center;
   }
-
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
   }
-
   .content_section_why,
   .content_section_how {
     gap: 10px;
   }
-
   .content_text_block_what {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
