@@ -4,9 +4,12 @@
 */
 :root {
   --accent-font: 'IBM Plex Mono';
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
   --accent-color: #ff0070;
   --title-color: #db00ff;
+  --shadow_color: #FF0070;
+  --title-text-color:#000028;
+  --text-color: #F1B2CE;
+  --menu-color: #ff0070;
+  --bg-color: #000028;  
   --bg-image: url(../images/cover-image-dark.png);
 }
