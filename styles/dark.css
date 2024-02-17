@@ -1,4 +1,4 @@
-:root.theme-dark {
+.theme_dark {
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --shadow_color: #ff0070;
@@ -6,16 +6,6 @@
   --text-color: #f1b2ce;
   --menu-color: #ff0070;
   --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-}
-
-.page.theme_dark {
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --shadow_color: #ff0070;
-  --title-text-color: #000028;
-  --text-color: #f1b2ce;
-  --menu-color: #ff0070;
-  --bg-color: #000028;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --bg-image: url(../images/cover-image-dark.png);
 }

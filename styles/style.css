@@ -1,8 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background: var(--bg-image) no-repeat center fixed;
-  font-family: var(--accent-font, serif);
+  font-family: var(--accent-font, monospace);
   background-color: var(--bg-color);
   font-size: 18px;
   font-style: normal;
@@ -91,7 +90,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: var(--accent-font, serif);
+  font-family: var(--accent-font, monospace);
   color: var(--menu-color);
   font-size: 18px;
   font-style: normal;
@@ -107,7 +106,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4);
+  border: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -155,7 +154,8 @@
   padding-inline: 10px;
 }
 
-.content-section {
+.content-section,
+.content_section_what {
   display: grid;
   gap: 20px;
 }
@@ -220,35 +220,13 @@ a {
   display: grid;
   align-content: space-evenly;
   block-size: 100vh;
-  min-block-size: 667px;
+  min-block-size: 668px;
 }
 
 .footer-title {
   font-weight: 700;
   text-align: center;
   text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.footer .decorated-zone::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1.56488rem;
-  height: 1.56244rem;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.footer .decorated-zone::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 1.56488rem;
-  height: 1.56244rem;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
 }
 
 @media (width >= 768px) {
@@ -291,11 +269,9 @@ a {
     gap: 80px;
   }
 
-  .content_section_why,
-  .content_section_how {
+  .content-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .content_section_what {
@@ -344,8 +320,7 @@ a {
     justify-content: center;
     margin: 0 auto;
   }
-  .content_section_why,
-  .content_section_how {
+  .content-section {
     gap: 10px;
   }
   .content_text_block_what {
